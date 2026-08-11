@@ -1,0 +1,8 @@
+{
+  "skillId": "com.gitlab.gitlab-org",
+  "date": "2026-08-11",
+  "source": {
+    "url": "https://gitlab.com/gitlab-org/ai/skills.git",
+    "path": "skills/*"
+  }
+}
