@@ -1,0 +1,8 @@
+{
+  "pluginId": "com.gitlab.gitlab-org/stack-changes",
+  "date": "2026-09-11",
+  "source": {
+    "url": "https://gitlab.com/gitlab-org/ai/gitlab-duo-plugins.git",
+    "path": "plugins/stack-changes"
+  }
+}
