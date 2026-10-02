@@ -1,0 +1,8 @@
+{
+  "skillId": "com.gitlab.gitlab-org/lazy-mcp-cli",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://gitlab.com/gitlab-org/ai/lazy-mcp.git",
+    "path": "skills/lazy-mcp-cli"
+  }
+}
