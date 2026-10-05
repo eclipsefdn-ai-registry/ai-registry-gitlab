@@ -1,0 +1,18 @@
+{
+  "serverId": "com.gitlab/lazy-mcp",
+  "date": "2026-10-02",
+  "metadata": {
+    "name": "Lazy MCP Proxy",
+    "description": "Client-agnostic MCP proxy that aggregates multiple MCP servers behind four meta-tools (list_servers, list_commands, describe_commands, invoke_command) and discovers downstream tools on demand, reducing initial context usage by around 90%. Supports stdio and Streamable HTTP transports and built-in OAuth 2.0 + PKCE for remote servers."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "lazy-mcp@latest",
+      "--config",
+      "~/.config/lazy-mcp/servers.json"
+    ]
+  }
+}
