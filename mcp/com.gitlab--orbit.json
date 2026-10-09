@@ -1,0 +1,16 @@
+{
+  "serverId": "com.gitlab/orbit",
+  "date": "2026-10-09",
+  "metadata": {
+    "name": "GitLab Orbit MCP Server",
+    "description": "MCP access to GitLab Orbit (formerly GitLab Knowledge Graph), the software lifecycle context graph that indexes a top-level GitLab.com group's SDLC entities (projects, work items, merge requests, pipelines, notes, labels, vulnerabilities) and default-branch source code into one property graph. Exposes graph discovery and query tools so an agent can answer questions about code structure, blast radius and cross-project relationships. Beta, and gated by the knowledge_graph feature flag on the top-level group."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "streamable-http",
+    "url": "https://gitlab.com/api/v4/orbit/mcp",
+    "oauth": {
+      "scopes": ["mcp_orbit"]
+    }
+  }
+}
