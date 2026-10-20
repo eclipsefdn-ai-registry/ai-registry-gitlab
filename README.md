@@ -8,7 +8,7 @@
 
 **Agent Skills**
 
-- All skills under `skills/*` in [gitlab-org/ai/skills](https://gitlab.com/gitlab-org/ai/skills) — a repo owned directly by GitLab's own `gitlab-org` group on GitLab.com (the same group that owns the main `gitlab-org/gitlab` product repo), MIT-licensed, and actively maintained (37 stars, 14 forks at the time of writing). It bundles first-party skills for `glab`-based GitLab workflows (MR review, MR descriptions, pipeline babysitting, GLQL queries), plus general agent-tooling skills (commit messages, handoff, skill authoring). At least one skill (`mr-review`) carries an explicit `metadata.author: gitlab` in its `SKILL.md` frontmatter; the rest rely on direct org ownership of the whole repo as their first-party signal. The approval uses a `skills/*` glob so newly published skills are picked up automatically on the next registry consolidation.
+- All skills under `skills/*` in [gitlab-org/ai/skills](https://gitlab.com/gitlab-org/ai/skills) — a repo owned directly by GitLab's own `gitlab-org` group on GitLab.com (the same group that owns the main `gitlab-org/gitlab` product repo), MIT-licensed, and actively maintained (37 stars, 14 forks at the time of writing). It bundles first-party skills for `glab`-based GitLab workflows (MR review, MR descriptions, pipeline babysitting, GLQL queries), plus general agent-tooling skills (commit messages, handoff, skill authoring). At least one skill (`mr-review`) carries an explicit `metadata.author: gitlab` in its `SKILL.md` frontmatter; the rest rely on direct org ownership of the whole repo as their first-party signal. The approval is an explicit list of 47 of the repo's 53 skills, not a `skills/*` glob: the catalog grew by 20 skills in one week (2026-10-09 to 2026-10-20), and a glob published them all unread. Six are left out as GitLab-internal: `gitlab-psql` and `gitlab-clickhouse` (GitLab's own GDK development databases), `postgresai` (GitLab's database-review tooling, maintained in `gitlab-org/gitlab`), `prep-start` (GitLab's internal Platform Readiness Enablement Process), `mr-label` (GitLab's internal MR label taxonomy, sourced from `internal.gitlab.com`), and `gitlab-rails-fix` (a workflow for fixing bugs in a `gitlab-org/gitlab` checkout). New skills are added after review rather than automatically.
 
 **MCP Server**
 
@@ -16,7 +16,7 @@
 
 **Agent Plugins**
 
-No Agent Plugin approval is included: no [agent-plugins.org](https://agent-plugins.org)-conformant plugin was found published by GitLab. The `gitlab-org/ai/skills` repo does ship `.claude-plugin/plugins/*/plugin.json` manifests, but these are Claude Code's own plugin-marketplace format, not agent-plugins.org's — each plugin's manifest points back at a shared `skills/` folder at the repo root (e.g. via a `"skills": "./"` field) rather than nesting its own `skills/<name>/SKILL.md` folders alongside `plugin.json`, which is what the agent-plugins.org spec (and this registry's consolidation logic) expects.
+Plugin approvals for three [agent-plugins.org](https://agent-plugins.org)-conformant plugins in [gitlab-org/ai/gitlab-duo-plugins](https://gitlab.com/gitlab-org/ai/gitlab-duo-plugins) (`create-issue`, `mr-review`, `stack-changes`). The `gitlab-org/ai/skills` repo also ships `.claude-plugin/plugins/*/plugin.json` manifests, but these are Claude Code's own plugin-marketplace format pointing back at the shared root `skills/` folder, not agent-plugins.org plugins, and are not approved.
 
 **A2A Agents**
 
