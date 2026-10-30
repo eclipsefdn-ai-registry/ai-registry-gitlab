@@ -1,0 +1,8 @@
+{
+  "skillId": "com.gitlab.gitlab-org/glab-stack",
+  "date": "2026-10-30",
+  "source": {
+    "url": "https://gitlab.com/gitlab-org/cli.git",
+    "path": "internal/commands/skills/bundled/assets/glab-stack"
+  }
+}
