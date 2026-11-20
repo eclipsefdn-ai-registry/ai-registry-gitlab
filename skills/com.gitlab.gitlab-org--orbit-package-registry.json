@@ -1,0 +1,8 @@
+{
+  "skillId": "com.gitlab.gitlab-org/orbit-package-registry",
+  "date": "2026-11-20",
+  "source": {
+    "url": "https://gitlab.com/gitlab-org/orbit/knowledge-graph.git",
+    "path": "skills/orbit-package-registry"
+  }
+}

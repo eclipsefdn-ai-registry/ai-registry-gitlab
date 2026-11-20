@@ -1,6 +1,6 @@
 {
   "skillId": "com.gitlab.gitlab-org",
-  "date": "2026-10-30",
+  "date": "2026-11-20",
   "source": {
     "url": "https://gitlab.com/gitlab-org/ai/skills.git",
     "path": [
@@ -13,6 +13,8 @@
       "skills/gitlab-agent-plan",
       "skills/gitlab-babysit-mr",
       "skills/gitlab-demo-videos",
+      "skills/gitlab-explain",
+      "skills/gitlab-implement",
       "skills/gitlab-mr-description",
       "skills/gitlab-pipeline-watch",
       "skills/gitlab-stacked-mrs",
@@ -36,6 +38,7 @@
       "skills/pushify",
       "skills/refactor",
       "skills/renovate-npm-review",
+      "skills/rewrite-in-rust",
       "skills/run-in-tmux-pane",
       "skills/rust-compile-memory",
       "skills/rust-idioms",
@@ -48,6 +51,7 @@
       "skills/stack-changes",
       "skills/story-creator",
       "skills/story-reviewer",
+      "skills/terminal-demo",
       "skills/threat-model-create",
       "skills/threat-model-review",
       "skills/video-takeaways",
